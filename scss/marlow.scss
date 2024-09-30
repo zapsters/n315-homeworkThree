@@ -1,0 +1,68 @@
+.marlow {
+  padding-top: 10px;
+  .img {
+    border-radius: 30px;
+    background-image: url("https://d2ci82p1s8eczl.cloudfront.net/wp-content/uploads/20231220103255/castatemushroom2-scaled2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    aspect-ratio: 1 / 0.5;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    span {
+      text-shadow: 4px 4px 2px black;
+    }
+  }
+  h3 {
+    text-align: center;
+    padding-top: 60px;
+    width: fit-content;
+    animation-name: tilt-shaking;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+  }
+  @keyframes tilt-shaking {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  ul {
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    li {
+      list-style-type: none;
+      img {
+        border-radius: 20px;
+        width: 400px;
+
+        aspect-ratio: 1 / 0.5;
+      }
+    }
+  }
+}

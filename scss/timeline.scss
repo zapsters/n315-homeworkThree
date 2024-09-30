@@ -1,0 +1,40 @@
+.timeline {
+  padding-top: 10px;
+  h1 {
+    font-size: 40px;
+  }
+  .actualTimeline {
+    overflow-x: scroll;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .content {
+      border-bottom: 2px solid black;
+      width: 500%;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 50px;
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: space;
+        flex-direction: column;
+        img {
+          object-fit: cover;
+          height: 250px;
+        }
+        .top {
+          padding-top: 20px;
+        }
+        p,
+        span {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

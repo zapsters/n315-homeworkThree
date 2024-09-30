@@ -1,0 +1,133 @@
+.live {
+  .nav {
+    // height: 53px;
+    padding: 12px 0 37px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      cursor: pointer;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+      gap: 27px;
+      font-size: 20px;
+      img {
+        max-height: 26px;
+      }
+    }
+    .search {
+      flex: 1;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .box {
+        flex: 1;
+        max-width: 580px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        height: 100%;
+        border-radius: 37px;
+        overflow: hidden;
+        border: 1px solid #cccccc;
+        input {
+          border-radius: 37px 0 0 37px;
+          padding: 0 16px;
+          height: 100%;
+          flex: 1;
+          border: 0px;
+        }
+        i {
+          border-left: 1px solid #cccccc;
+          width: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          background-color: #f8f8f8;
+        }
+        i:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 20px;
+      .fa-circle-user {
+        font-size: 32px;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    .video {
+      flex: 1;
+      font-family: "roboto";
+      .display {
+        aspect-ratio: 1045 / 586;
+        background-color: black;
+        border-radius: 15px;
+        background-image: url("../assets/video.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      h1 {
+        font-size: 20px;
+        margin-top: 18px;
+      }
+    }
+    .sidebar {
+      padding: 10px 0;
+      flex: 1;
+      max-width: 420px;
+
+      .videoRecommendation {
+        cursor: pointer;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 8px;
+
+        .thumbnail {
+          width: 168px;
+          height: 92px;
+          aspect-ratio: 92 / 168;
+          background-color: black;
+          border-radius: 15px;
+        }
+        .details {
+          text-align: left;
+          display: flex;
+          padding: 8px 0;
+          flex: 1;
+          flex-direction: column;
+          font-family: "roboto";
+          p {
+            font-weight: 200;
+            margin-bottom: 7px;
+            font-size: 14px;
+          }
+          span {
+            font-weight: 100;
+            color: rgb(96, 96, 96);
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

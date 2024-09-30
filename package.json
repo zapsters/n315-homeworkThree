@@ -1,0 +1,15 @@
+{
+  "name": "homeworkthree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "liveserver": "live-server",
+    "compile": "sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.79.4"
+  }
+}

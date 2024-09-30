@@ -15,7 +15,7 @@ export function changeRoute() {
         $("#app").html(`${e.status} ${e.statusText}`);
       });
   } else {
-    $.get(`pages/contact.html`, function (data) {
+    $.get(`pages/home.html`, function (data) {
       // console.log("data " + data);
       $("#app").html(data);
     });
